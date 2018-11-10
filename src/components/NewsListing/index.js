@@ -12,12 +12,14 @@ const NewsResource = createResource(() =>
 );
 
 const NewsComponent = () => {
-  const newsList = NewsResource.read();
-  return (
-    <div className="wrapper">
-      {newsList.length &&
-        newsList.map(news => <NewsPaper key={news.source} {...news} />)}
-    </div>
+  const newsListData = NewsResource.read();
+  const newsList = newsListData.map(news => (
+    <NewsPaper key={news.source} {...news} />
+  ));
+  return newsListData.length ? (
+    <div className="wrapper">{newsList}</div>
+  ) : (
+    <Message type={MSG_INFO}>Come back later. Processing!</Message>
   );
 };
 

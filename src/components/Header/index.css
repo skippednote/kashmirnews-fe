@@ -3,9 +3,21 @@ header {
     font-weight: normal;
 }
 
+h1 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
 
 @media (min-width: 1025px) {
     header {
         font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
     }
 }

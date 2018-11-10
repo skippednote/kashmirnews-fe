@@ -1,4 +1,5 @@
 import React from 'react';
+import Message, { MSG_INFO } from '../Message';
 import './index.css';
 
 function NewsPaper({ source, newsItems }) {
@@ -16,7 +17,13 @@ function NewsPaper({ source, newsItems }) {
   return (
     <section className="section">
       <h2>{source}</h2>
-      <ul className="list">{newsList}</ul>
+      <div>
+        {newsItems.length ? (
+          <ul className="list">{newsList}</ul>
+        ) : (
+          <Message type={MSG_INFO}>No news found</Message>
+        )}
+      </div>
     </section>
   );
 }

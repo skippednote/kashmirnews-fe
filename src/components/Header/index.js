@@ -5,6 +5,7 @@ function Header() {
   return (
     <header className="header">
       <h1>Kashmir News</h1>
+      <p>Just the latest news.</p>
     </header>
   );
 }
