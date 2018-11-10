@@ -1,0 +1,17 @@
+.wrapper {
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1025px) {
+    .wrapper {
+        width: 70%
+    }
+}

@@ -1,0 +1,11 @@
+header {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+
+@media (min-width: 1025px) {
+    header {
+        font-size: 2rem;
+    }
+}

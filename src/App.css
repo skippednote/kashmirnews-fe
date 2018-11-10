@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    padding: 2rem;
+    background-color: #efefef;
+}
+
+@media (min-width: 1025px) {
+    body {
+        padding: 1rem;
+    }
+}

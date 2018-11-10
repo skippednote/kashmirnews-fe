@@ -1,0 +1,20 @@
+[class^=message-] {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    [class^=message-] {
+        font-size: 1.25rem;
+    }
+}
+
+.message-error {
+    background-color: #ff6d6d;
+}
+
+.message-info {
+    background-color: #7d9ffd;
+}
