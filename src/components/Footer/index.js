@@ -7,6 +7,10 @@ function Footer() {
       <a href="https://www.twitter.com/skippednote" className="link">
         Made by Bassam Ismail
       </a>
+      <hr className="hr footer-hr" />
+      <p className="footer-info">
+        All content belongs to the respective newspapers.
+      </p>
     </footer>
   );
 }

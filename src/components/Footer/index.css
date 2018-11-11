@@ -5,4 +5,14 @@ footer {
 
 .link {
     color: #39f;
+    text-decoration: none;
+}
+
+.footer-hr {
+    margin-top: 1rem;
+}
+
+.footer-info {
+    padding-top: 10px;
+    font-size: 1rem;
 }
